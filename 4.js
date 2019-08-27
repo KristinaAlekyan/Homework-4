@@ -1,3 +1,21 @@
+/*2. Given an array of integers. All numbers are unique. Find the count of missing numbers
+between minimum and maximum elements to make integers sequence.*/
+
+let arr=[1,3,2,5,9,7,10];
+
+arr.sort(function(a,b){
+	if(a>b) return 1;
+	else return -1; 
+});
+
+let num = arr[arr.length-1]-arr[0]-arr.length+1
+
+console.log(num);
+
+
+
+
+
 
 /*3.Convert a long phrase to its acronym.*/
 
