@@ -8,7 +8,7 @@ arr.sort(function(a,b){
 	else return -1; 
 });
 
-let num = arr[arr.length-1]-arr[0]-arr.length+1
+let num = arr[arr.length-1]-arr[0]-arr.length+1;
 
 console.log(num);
 
