@@ -1,3 +1,26 @@
+
+/*1. Given an array of integers, find the pair of adjacent elements that has the largest product
+and return that product.*/
+
+let arr=[2,1,5,4,1,11];
+	let multArNextEl=arr.map(function(element, index){
+	return element*arr[index+1];
+	});
+    multArNextEl.pop();
+
+multArNextEl.sort(function(a,b){
+
+if(a>b) return 1;
+else return -1; 
+
+})
+
+let max = Math.max(...multArNextEl);
+console.log(max);
+
+
+
+
 /*2. Given an array of integers. All numbers are unique. Find the count of missing numbers
 between minimum and maximum elements to make integers sequence.*/
 
