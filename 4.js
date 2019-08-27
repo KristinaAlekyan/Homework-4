@@ -42,7 +42,7 @@ console.log(num);
 
 /*3.Convert a long phrase to its acronym.*/
 
-let str = 'Prisoner of War';    //let str='Have a good night'
+let str = 'Prisoner of War';    
 
 let res = str.split(" ");
 let arr=[];
@@ -70,7 +70,7 @@ arrNew.push(str.slice(i,i+n));
 }
 return arrNew;
 }
-console.log(subStr('1234567',8));
+console.log(subStr('495215',3));
 
  
 
