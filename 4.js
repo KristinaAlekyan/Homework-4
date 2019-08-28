@@ -72,6 +72,44 @@ return arrNew;
 }
 console.log(subStr('495215',3));
 
+
+/*6. Given the list of the following readers:[
+	{ book: "Catcher in the Rye", readStatus: true, percent: 40},
+	{ book: "Animal Farm", readStatus: true, percent: 20},
+	{ book: "Solaris", readStatus: false, percent: 90 },
+	{ book: "The Fall", readStatus: true, percent: 50 },
+	{ book: "White Nights", readStatus: false, percent: 60 } ,
+	{ book: "After Dark", readStatus: true, percent: 70 }
+	];
+Output the books sorted by the percent in descending order which readStatus is true.*/ 
+
+
+
+let arr=[
+{ book: "Catcher in the Rye", readStatus: true, percent: 40},
+{ book: "Animal Farm", readStatus: true, percent: 20},
+{ book: "Solaris", readStatus: false, percent: 90 },
+{ book: "The Fall", readStatus: true, percent: 50 },
+{ book: "White Nights", readStatus: false, percent: 60 } ,
+{ book: "After Dark", readStatus: true, percent: 70 }
+];
+
+
+arr.sort(function(a,b){
+	a1=a.percent;
+	b1=b.percent;
+	if(a1>b1) return 1;
+	else return -1;
+	})
+let arrNew=[];
+for(let key in arr){
+	if (arr[key].readStatus==true){
+	arrNew.push(arr[key])
+	}
+}
+console.log(arrNew);
+
+
  
 
 
